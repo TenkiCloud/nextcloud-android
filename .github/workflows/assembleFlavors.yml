@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
     flavor:
-        runs-on: tenki-standard-autoscale
+        runs-on: tenki-standard-medium-4c-8g
         strategy:
             fail-fast: false
             matrix:
