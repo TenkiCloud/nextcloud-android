@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
     flavor:
-        runs-on: tenki-standard-large-8c-16g
+        runs-on: tenki-standard-large-plus-16c-32g
         strategy:
             fail-fast: false
             matrix:
