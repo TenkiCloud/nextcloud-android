@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
     analysis:
-        runs-on: tenki-standard-autoscale
+        runs-on: tenki-standard-medium-4c-8g
         steps:
             - name: Disabled on forks
               if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
