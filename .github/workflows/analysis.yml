@@ -10,11 +10,8 @@
 
 name: "Analysis"
 
-on:
-    pull_request:
-        branches: [ "master", "main", "stable-*" ]
-    push:
-        branches: [ "master", "main", "stable-*" ]
+on: pull_request
+
 
 permissions:
     pull-requests: write
@@ -26,7 +23,7 @@ concurrency:
 
 jobs:
     analysis:
-        runs-on: ubuntu-latest
+        runs-on: tenki-standard-large-plus-16c-32g
         steps:
             - name: Disabled on forks
               if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
