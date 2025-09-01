@@ -17,7 +17,7 @@ permissions:
 jobs:
   analyze:
     name: Analyze
-    runs-on: tenki-standard-autoscale
+    runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: read
